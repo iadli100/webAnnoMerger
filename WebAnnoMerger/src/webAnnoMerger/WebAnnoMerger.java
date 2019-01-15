@@ -39,6 +39,7 @@ public class WebAnnoMerger {
 
 		// 2. parse lines
 		int globalEntryIndex = 0;
+		Boolean flagNewLine = false;
 		for (String line : lines) {
 			// skip newline and # except #Text=
 			if (line.isEmpty() || (line.startsWith("#") && !line.startsWith("#Text="))) {
@@ -54,7 +55,11 @@ public class WebAnnoMerger {
 			String result = replaceLocalIndexWithGlobalIndex(line, globalEntryIndex);
 
 			// replace local unique label with global unique label
-			result = replaceLocalUniqueLabelWithGlobalUniqueLabel(result, globalEntryIndex);
+			// result = replaceLocalUniqueLabelWithGlobalUniqueLabel(result,
+			// globalEntryIndex);
+
+			if (DEBUG)
+				System.out.println(result);
 
 			output.append(result + "\n");
 		}
@@ -65,7 +70,7 @@ public class WebAnnoMerger {
 
 	/**
 	 * takes .jar args and treats them as file names. merges all files into array of
-	 * strings.
+	 * strings. if args are missing, reads all .tsv from current directory.
 	 * 
 	 * @param args .jar args treated as file names
 	 * @return all files merges into an array of strings
@@ -74,10 +79,24 @@ public class WebAnnoMerger {
 	private static ArrayList<String> mergeInputFiles(String[] args) throws IOException {
 		ArrayList<String> lines = new ArrayList<String>();
 
-		for (int i = 0; i < args.length; i++) {
-			System.out.println(args[i]);
-			File f = new File(args[i]);
-			lines.addAll(readFile(f));
+		if (args.length > 0) { // handle filenames handed over as parameters
+			for (int i = 0; i < args.length; i++) {
+				System.out.println(args[i]);
+				File f = new File(args[i]);
+				lines.addAll(readFile(f));
+			}
+		} else { // read all .tsv files from current directory, in case no arguments are provided
+			File[] files = new File("./").listFiles();
+			if (files == null) {
+				System.err.println("No files found...");
+			} else {
+				for (File child : files) {
+					if (child.isFile() && child.getName().endsWith(".tsv")) {
+						System.out.println("read file " + child.getName());
+						lines.addAll(readFile(child));
+					}
+				}
+			}
 		}
 
 		return lines;
@@ -133,11 +152,7 @@ public class WebAnnoMerger {
 
 			Matcher detailedIndexMatcher = PATTERN_SENTENCE_INDEX_DETAILED.matcher(indexMatcher.group(1));
 			if (detailedIndexMatcher.find()) {
-				/* 
 				result = result.replaceFirst(indexMatcher.group(1),
-						String.format("%d%s", globalEntryIndex, detailedIndexMatcher.group(2)));
-						// */
-				result = result.replaceAll(indexMatcher.group(1),
 						String.format("%d%s", globalEntryIndex, detailedIndexMatcher.group(2)));
 			}
 		}
@@ -145,9 +160,8 @@ public class WebAnnoMerger {
 	}
 
 	/**
-	 * reads webAnno export and drops first 13 lines being web anno meta info. TODO:
-	 * please consider the magic number 13. it may vary for future versions of
-	 * webanno.
+	 * reads webAnno export and drops first lines being web anno meta info. this may
+	 * vary for future versions of webanno.
 	 * 
 	 * @param f file
 	 * @return
@@ -162,11 +176,17 @@ public class WebAnnoMerger {
 		String line;
 
 		int lineIdx = 0;
+		boolean firstNewLineFlag = false; // hack to avoid double new lines in output file. TODO: solve more elegantly ;)
 		while ((line = br.readLine()) != null) {
 			++lineIdx;
 
 			if (line.startsWith("#T_SP=") || line.startsWith("#FORMAT=")) {
 				webAnnoMetaInformation.append(line + "\n");
+				continue;
+			} 
+			else if (line.isEmpty() && !firstNewLineFlag) {
+				webAnnoMetaInformation.append("\n");
+				firstNewLineFlag = true;
 				continue;
 			}
 
@@ -193,8 +213,8 @@ public class WebAnnoMerger {
 		// get time stamp for file name
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream(timeStamp + "_webanno.tsv"), StandardCharsets.UTF_8));
+		BufferedWriter bw = new BufferedWriter(
+				new OutputStreamWriter(new FileOutputStream(timeStamp + "_webanno.tsv"), StandardCharsets.UTF_8));
 
 		bw.write(webAnnoMetaInformation.toString());
 		bw.write(output);
