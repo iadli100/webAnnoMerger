@@ -26,6 +26,7 @@ public class WebAnnoMerger {
 	 * patterns to parse the .tsv webanno exports.
 	 */
 		private static final Pattern PATTERN_SENTENCE_INDEX = Pattern.compile("(\\d+-\\d+)");
+		private static final Pattern PATTERN_SENTENCE_INDEX_DETAILED = Pattern.compile("(\\d+)(-\\d+)");
 		private static final Pattern PATTERN_LABELS = Pattern.compile("\\[(\\d+)\\]");
 
 	public static void main(String[] args) throws Exception, FileNotFoundException {
@@ -49,27 +50,39 @@ public class WebAnnoMerger {
 				// 
 				// TODO: add unprocessed line to global output file
 				//
+				output.append(line);
 				continue;
 			} 
 			else if (line.startsWith("#Text=")) {
 				// 
 				// TODO: add unprocessed line to global output file
 				//
+				output.append(line);
 				globalEntryIndex++;
 			}
 			
 			// replace local index with global index
+			String result = line;
 			Matcher indexMatcher = PATTERN_SENTENCE_INDEX.matcher(line);
 			if (indexMatcher.find()) {
-				System.out.printf("%d: %s\n", globalEntryIndex, indexMatcher.group(1));
+				System.out.printf("\nglobal_index: %d local_index: %s", globalEntryIndex, indexMatcher.group(1)); // TODO: convert to DEBUG-log
+				
+				Matcher detailedIndexMatcher = PATTERN_SENTENCE_INDEX_DETAILED.matcher(indexMatcher.group(1));
+				if (detailedIndexMatcher.find()) {
+					// System.out.printf("%s %s\n", detailedIndexMatcher.group(1), detailedIndexMatcher.group(2));
+					
+					String.format("%d-%s\n", globalEntryIndex, detailedIndexMatcher.group(2));
+					
+					result = result.replaceFirst(indexMatcher.group(1), String.format("%d%s", globalEntryIndex, detailedIndexMatcher.group(2)));
+				}
 			}
 			
 			
 			// replace local unique label with global unique label
 			Matcher labelsMatcher = PATTERN_LABELS.matcher(line);
-			String result = line;
+			System.out.print(" local_labels: "); // TODO: convert to DEBUG
 			while (labelsMatcher.find()) {
-				System.out.print(labelsMatcher.group(1) + " ");
+				System.out.print(labelsMatcher.group(1) + " "); // TODO: convert to DEBUG
 
 				// result = result.replaceFirst(labelsMatcher.group(1), globalEntryIndex + "" + labelsMatcher.group(1));
 				// result = result.replaceAll(labelsMatcher.group(1), globalEntryIndex + "" + labelsMatcher.group(1)); // tweaking the right pattern
@@ -77,9 +90,10 @@ public class WebAnnoMerger {
 				// result = result.replaceFirst("\\[" + labelsMatcher.group(1) + "\\]", "\\[" + globalEntryIndex + "" + labelsMatcher.group(1) + "\\]");
 				result = result.replaceFirst(String.format("\\[%s\\]", labelsMatcher.group(1)), String.format("\\[%d%s\\]", globalEntryIndex, labelsMatcher.group(1)));
 			}
-			System.out.println();
-			System.out.println(result);
+			System.out.println(); // TODO: convert to DEBUG
+			System.out.println(result); // TODO: add processed line to output
 			
+			output.append(result);
 			
 			/*
 			Pattern index = Pattern.compile("(\\d-\\d)");
