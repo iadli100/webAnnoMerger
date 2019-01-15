@@ -1,0 +1,228 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=webanno.custom.CategoryDoppelBelegstelle|DoppelBelegstelleValue
+#T_SP=webanno.custom.CategoryKE|KEValue
+#T_SP=webanno.custom.CategoryKEE|KEEValue
+#T_SP=webanno.custom.CategoryLEMMA|LEMMAValue
+#T_SP=webanno.custom.CategoryMetaCorpusID|MetaCorpusIDValue
+#T_SP=webanno.custom.CategoryMetaDate|MetaDateValue
+#T_SP=webanno.custom.CategoryMetaLContext|MetaLContextValue
+#T_SP=webanno.custom.CategoryMetaRContext|MetaRContextValue
+#T_SP=webanno.custom.CategoryMetaSource|MetaSourceValue
+#T_SP=webanno.custom.CategoryName|NameValue
+#T_SP=webanno.custom.CategoryPOS|POSValue
+#T_SP=webanno.custom.GF|GFDesc
+#T_SP=webanno.custom.PT|PTDesc
+
+
+#Text=Jede Seite schildert das Geschehen aus ihrer Perspektive , Aussage steht gegen Aussage .
+1-1	0-4	Jede	_	_	_	jede	1-1	18.09.2017	Es ist schwierig, unabhängige Informationen über Rettungsaktionen zu erhalten.	Wie glaubwürdig die Zeugen sind, lässt sich nur schwer prüfen.	Die Zeit, 18.09.2017, Nr. 38	_	PIAT	NK[23]	CS[44]|S[45]|NP[46]|PIAT[47]	
+1-2	5-10	Seite	_	_	_	Seite	1-2	_	_	_	_	_	NN	NK[23]	CS[44]|S[45]|NP[46]|NN[48]	
+1-3	11-20	schildert	_	_	_	schildern	1-3	_	_	_	_	_	VVFIN	HD	CS[44]|S[45]|VVFIN[49]	
+1-4	21-24	das	_	_	_	die	1-4	_	_	_	_	_	ART	NK[24]	CS[44]|S[45]|NP[50]|ART[51]	
+1-5	25-34	Geschehen	_	_	_	Geschehen	1-5	_	_	_	_	_	NN	NK[24]	CS[44]|S[45]|NP[50]|NN[52]	
+1-6	35-38	aus	_	_	_	aus	1-6	_	_	_	_	_	APPR	AC	CS[44]|S[45]|PP[53]|APPR[54]	
+1-7	39-44	ihrer	_	_	_	ihr	1-7	_	_	_	_	_	PPOSAT	NK[25]	CS[44]|S[45]|PP[53]|PPOSAT[55]	
+1-8	45-56	Perspektive	_	_	_	Perspektive	1-8	_	_	_	_	_	NN	NK[25]	CS[44]|S[45]|PP[53]|NN[56]	
+1-9	57-58	,	_	_	_	,	1-9	_	_	_	_	_	$,		CS[44]|$,[57]	
+1-10	59-66	Aussage	_	Vor\_Präp	_	Aussage	1-10	_	_	_	_	N1\_gegen\_N1	NN	NK	CS[44]|S[58]|NP[59]|NN[60]	
+1-11	67-72	steht	_	_	_	stehen	1-11	_	_	_	_	_	VVFIN	HD	CS[44]|S[58]|VVFIN[61]	
+1-12	73-78	gegen	_	_	*	gegen	1-12	_	_	_	_	N1\_gegen\_N1[9]	APPR	AC	CS[44]|S[58]|PP[62]|APPR[63]	
+1-13	79-86	Aussage	_	Nach\_Präp	_	Aussage	1-13	_	_	_	_	N1\_gegen\_N1[9]	NN	NK	CS[44]|S[58]|PP[62]|NN[64]	
+1-14	87-88	.	_	_	_	.	1-14	_	_	_	_	_	$.		$.	
+
+#Text=Es lässt sich nicht recherchieren , was in der Nacht wirklich passiert ist , Aussage steht gegen Aussage .
+2-1	89-91	Es	_	_	_	es	2-1	14.06.2017	Meier sagt, er sei fassungslos gewesen.	Meier und Wuppert heißen eigentlich anders, sie bitten darum, dass nicht ihre echten Namen verwendet werden.	Die Zeit, 14.06.2017, Nr. 22	_	PPER	PH	CS[65]|S[66]|NP[67]|PPER[68]	
+2-2	92-97	lässt	_	_	_	lassen	2-2	_	_	_	_	_	VVFIN	HD	CS[65]|S[66]|VVFIN[69]	
+2-3	98-102	sich	_	_	_	sich	2-3	_	_	_	_	_	PRF	OA	CS[65]|S[66]|PRF[70]	
+2-4	103-108	nicht	_	_	_	nicht	2-4	_	_	_	_	_	PTKNEG	NG	CS[65]|S[66]|PTKNEG[71]	
+2-5	109-122	recherchieren	_	_	_	recherchieren	2-5	_	_	_	_	_	VVINF	HD	CS[65]|S[66]|VP[72]|VVINF[73]	
+2-6	123-124	,	_	_	_	,	2-6	_	_	_	_	_	$,	OC	CS[65]|S[66]|VP[72]|$,[74]	
+2-7	125-128	was	_	_	_	was	2-7	_	_	_	_	_	PRELS	SB	CS[65]|S[66]|VP[72]|S[75]|PRELS[76]	
+2-8	129-131	in	_	_	_	in	2-8	_	_	_	_	_	APPR	AC	CS[65]|S[66]|VP[72]|S[75]|VP[77]|PP[78]|APPR[79]	
+2-9	132-135	der	_	_	_	die	2-9	_	_	_	_	_	ART	NK[26]	CS[65]|S[66]|VP[72]|S[75]|VP[77]|PP[78]|ART[80]	
+2-10	136-141	Nacht	_	_	_	Nacht	2-10	_	_	_	_	_	NN	NK[26]	CS[65]|S[66]|VP[72]|S[75]|VP[77]|PP[78]|NN[81]	
+2-11	142-150	wirklich	_	_	_	wirklich	2-11	_	_	_	_	_	ADJD	MO	CS[65]|S[66]|VP[72]|S[75]|VP[77]|ADJD[82]	
+2-12	151-159	passiert	_	_	_	passieren	2-12	_	_	_	_	_	VVPP	HD[27]	CS[65]|S[66]|VP[72]|S[75]|VP[77]|VVPP[83]	
+2-13	160-163	ist	_	_	_	sein	2-13	_	_	_	_	_	VAFIN	HD[27]	CS[65]|S[66]|VP[72]|S[75]|VAFIN[84]	
+2-14	164-165	,	_	_	_	,	2-14	_	_	_	_	_	$,		CS[65]|$,[85]	
+2-15	166-173	Aussage	_	Vor\_Präp	_	Aussage	2-15	_	_	_	_	N1\_gegen\_N1	NN	NK	CS[65]|S[86]|NP[87]|NN[88]	
+2-16	174-179	steht	_	_	_	stehen	2-16	_	_	_	_	_	VVFIN	HD	CS[65]|S[86]|VVFIN[89]	
+2-17	180-185	gegen	_	_	*	gegen	2-17	_	_	_	_	N1\_gegen\_N1[10]	APPR	AC	CS[65]|S[86]|PP[90]|APPR[91]	
+2-18	186-193	Aussage	_	Nach\_Präp	_	Aussage	2-18	_	_	_	_	N1\_gegen\_N1[10]	NN	NK	CS[65]|S[86]|PP[90]|NN[92]	
+2-19	194-195	.	_	_	_	.	2-19	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage , die Beweislast liegt bei Valchev , doch der hat keine Zeugen .
+3-1	196-203	Aussage	_	Vor\_Präp	_	Aussage	3-1	27.02.2014	Still dagesessen sei er, mit seinem Schild und einem Pappbecher, sonst nichts.	Die Polizisten hätten ihn mitgenommen, erzählt Valchev, im Polizeikommissariat hätten sie ihn aufgefordert, sich auszuziehen, bis auf die Unterhose.	Die Zeit, 27.02.2014, Nr. 10	N1\_gegen\_N1	NN	NK	CS[93]|S[94]|NP[95]|NN[96]	
+3-2	204-209	steht	_	_	_	stehen	3-2	_	_	_	_	_	VVFIN	HD	CS[93]|S[94]|VVFIN[97]	
+3-3	210-215	gegen	_	_	*	gegen	3-3	_	_	_	_	N1\_gegen\_N1[11]	APPR	AC	CS[93]|S[94]|PP[98]|APPR[99]	
+3-4	216-223	Aussage	_	Nach\_Präp	_	Aussage	3-4	_	_	_	_	N1\_gegen\_N1[11]	NN	NK	CS[93]|S[94]|PP[98]|NN[100]	
+3-5	224-225	,	_	_	_	,	3-5	_	_	_	_	_	$,		CS[93]|$,[101]	
+3-6	226-229	die	_	_	_	die	3-6	_	_	_	_	_	ART	NK[28]	CS[93]|S[102]|NP[103]|ART[104]	
+3-7	230-240	Beweislast	_	_	_	Beweislast	3-7	_	_	_	_	_	NN	NK[28]	CS[93]|S[102]|NP[103]|NN[105]	
+3-8	241-246	liegt	_	_	_	liegen	3-8	_	_	_	_	_	VVFIN	HD	CS[93]|S[102]|VVFIN[106]	
+3-9	247-250	bei	_	_	_	bei	3-9	_	_	_	_	_	APPR	AC	CS[93]|S[102]|PP[107]|APPR[108]	
+3-10	251-258	Valchev	_	_	_	Valchev	3-10	_	_	_	_	_	NE	NK	CS[93]|S[102]|PP[107]|NE[109]	
+3-11	259-260	,	_	_	_	,	3-11	_	_	_	_	_	$,		CS[93]|$,[110]	
+3-12	261-265	doch	_	_	_	doch	3-12	_	_	_	_	_	KON	CD	CS[93]|KON[111]	
+3-13	266-269	der	_	_	_	die	3-13	_	_	_	_	_	PDS	SB	CS[93]|S[112]|PDS[113]	
+3-14	270-273	hat	_	_	_	haben	3-14	_	_	_	_	_	VAFIN	HD	CS[93]|S[112]|VAFIN[114]	
+3-15	274-279	keine	_	_	_	keine	3-15	_	_	_	_	_	PIAT	NK[29]	CS[93]|S[112]|NP[115]|PIAT[116]	
+3-16	280-286	Zeugen	_	_	_	Zeuge	3-16	_	_	_	_	_	NN	NK[29]	CS[93]|S[112]|NP[115]|NN[117]	
+3-17	287-288	.	_	_	_	.	3-17	_	_	_	_	_	$.		$.	
+
+#Text=" " Aussage steht gegen Aussage . " "
+4-1	289-290	"	_	_	_	"[3]	4-1	21.10.2013	""Es ist nicht erwiesen, dass der Angeklagte der Täter ist"", sagte Verteidiger Urs Kobler in seinem Plädoyer.	Im Alibi der Freundin gebe es Wiedersprüche.	Die Zeit, 21.10.2013 (online)	_	$([17]	NK[30]	S[118]|NP[119]|$([120]	
+4-2	291-292	"	_	_	_	"[3]	4-2	_	_	_	_	_	$([17]	NK[30]	S[118]|NP[119]|$([120]	
+4-3	293-300	Aussage	_	Vor\_Präp	_	Aussage	4-3	_	_	_	_	N1\_gegen\_N1	NN	NK[30]	S[118]|NP[119]|NN[121]	
+4-4	301-306	steht	_	_	_	stehen	4-4	_	_	_	_	_	VVFIN	HD	S[118]|VVFIN[122]	
+4-5	307-312	gegen	_	_	*	gegen	4-5	_	_	_	_	N1\_gegen\_N1[12]	APPR	AC	S[118]|PP[123]|APPR[124]	
+4-6	313-320	Aussage	_	Nach\_Präp	_	Aussage	4-6	_	_	_	_	N1\_gegen\_N1[12]	NN	NK	S[118]|PP[123]|NN[125]	
+4-7	321-322	.	_	_	_	.	4-7	_	_	_	_	_	$.	[31]	$.	
+4-8	323-324	"	_	_	_	"[4]	4-8	_	_	_	_	_	$([18]	[31]	$([126]	
+4-9	325-326	"	_	_	_	"[4]	4-9	_	_	_	_	_	$([18]	[31]	$([126]	
+
+#Text=Aussage steht gegen Aussage .
+5-1	327-334	Aussage	_	Vor\_Präp	_	Aussage	5-1	28.09.2013	Die von Nowack am Spielfeld angesprochenen Spieler ziehen nach einem Bericht derFußballwoche eine Verleumdungsklage in Erwägung.	Am 11. Oktober kommt es nun zur Verhandlung vor dem Sportgericht des Berliner Fußball-Verbandes (BFV).	Die Zeit, 28.09.2013 (online)	N1\_gegen\_N1	NN	NK	S[127]|NP[128]|NN[129]	
+5-2	335-340	steht	_	_	_	stehen	5-2	_	_	_	_	_	VVFIN	HD	S[127]|VVFIN[130]	
+5-3	341-346	gegen	_	_	*	gegen	5-3	_	_	_	_	N1\_gegen\_N1[13]	APPR	AC	S[127]|PP[131]|APPR[132]	
+5-4	347-354	Aussage	_	Nach\_Präp	_	Aussage	5-4	_	_	_	_	N1\_gegen\_N1[13]	NN	NK	S[127]|PP[131]|NN[133]	
+5-5	355-356	.	_	_	_	.	5-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage .
+6-1	357-364	Aussage	Doppelte Belegstelle[1]	_	_	Aussage	6-1	20.09.2012	Weil niemand außer den beiden Beteiligten weiß, was damals geschah.	Was genau hat der Beamte Ortwin Ennigkeit, den Daschner mit dem letzten, entscheidenden Verhör betraute, Gäfgen angedroht?	Die Zeit, 20.09.2012, Nr. 39	_	NN	NK	S[134]|NP[135]|NN[136]	
+6-2	365-370	steht	Doppelte Belegstelle[1]	_	_	stehen	6-2	_	_	_	_	_	VVFIN	HD	S[134]|VVFIN[137]	
+6-3	371-376	gegen	Doppelte Belegstelle[1]	_	_	gegen	6-3	_	_	_	_	_	APPR	AC	S[134]|PP[138]|APPR[139]	
+6-4	377-384	Aussage	Doppelte Belegstelle[1]	_	_	Aussage	6-4	_	_	_	_	_	NN	NK	S[134]|PP[138]|NN[140]	
+6-5	385-386	.	_	_	_	.	6-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage :
+7-1	387-394	Aussage	_	Vor\_Präp	_	Aussage	7-1	05.01.2012	Weder Wulffs Interview in ARD und ZDF noch die Darstellung seiner Anwälte im Internet geben Antworten zu allen Punkten.	Was genau wollte Wulff genau vom «Bild»-Chef, als er ihn am 12. Dezember anrief?	Die Zeit, 05.01.2012 (online)	N1\_gegen\_N1	NN	NK	S[141]|NP[142]|NN[143]	
+7-2	395-400	steht	_	_	_	stehen	7-2	_	_	_	_	_	VVFIN	HD	S[141]|VVFIN[144]	
+7-3	401-406	gegen	_	_	*	gegen	7-3	_	_	_	_	N1\_gegen\_N1[14]	APPR	AC	S[141]|PP[145]|APPR[146]	
+7-4	407-414	Aussage	_	Nach\_Präp	_	Aussage	7-4	_	_	_	_	N1\_gegen\_N1[14]	NN	NK	S[141]|PP[145]|NN[147]	
+7-5	415-416	:	_	_	_	:	7-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage :
+8-1	417-424	Aussage	_	Vor\_Präp	_	Aussage	8-1	05.01.2012	Weder Wulffs Interview in ARD und ZDF noch die Darstellung seiner Anwälte im Internet geben Antworten zu allen Punkten.	Was wollte Wulff genau vom «Bild»-Chef, als er ihn am 12. Dezember anrief?	Die Zeit, 05.01.2012 (online)	N1\_gegen\_N1	NN	NK	S[148]|NP[149]|NN[150]	
+8-2	425-430	steht	_	_	_	stehen	8-2	_	_	_	_	_	VVFIN	HD	S[148]|VVFIN[151]	
+8-3	431-436	gegen	_	_	*	gegen	8-3	_	_	_	_	N1\_gegen\_N1[15]	APPR	AC	S[148]|PP[152]|APPR[153]	
+8-4	437-444	Aussage	_	Nach\_Präp	_	Aussage	8-4	_	_	_	_	N1\_gegen\_N1[15]	NN	NK	S[148]|PP[152]|NN[154]	
+8-5	445-446	:	_	_	_	:	8-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage .
+9-1	447-454	Aussage	Doppelte Belegstelle[2]	_	_	Aussage	9-1	02.12.2011	Es geht um die Frage, ob Bollig tatsächlich aus dem Handbuch ihres Chefs kopiert hat oder umgekehrt der von seiner engsten Mitarbeiterin.	Zwar legte die Doktorandin ihre Arbeit erst ein Jahr, nachdem der entsprechende Band des Handbuchs erschienen war, zur Prüfung vor.	Die Zeit, 02.12.2011, Nr. 49	_	NN	NK	S[155]|NP[156]|NN[157]	
+9-2	455-460	steht	Doppelte Belegstelle[2]	_	_	stehen	9-2	_	_	_	_	_	VVFIN	HD	S[155]|VVFIN[158]	
+9-3	461-466	gegen	Doppelte Belegstelle[2]	_	_	gegen	9-3	_	_	_	_	_	APPR	AC	S[155]|PP[159]|APPR[160]	
+9-4	467-474	Aussage	Doppelte Belegstelle[2]	_	_	Aussage	9-4	_	_	_	_	_	NN	NK	S[155]|PP[159]|NN[161]	
+9-5	475-476	.	_	_	_	.	9-5	_	_	_	_	_	$.		$.	
+
+#Text=Aber im Grunde wissen wir nichts über den Fall Kachelmann , selbst nach Wochen intensiver Berichterstattung , auch in derZEIT . Aussage steht gegen Aussage , Gutachten gegen Gutachten , und je ausführlicher über die angebliche Vergewaltigung einer Freundin des Moderators berichtet wird , desto dichter wird der Nebel der Halbwahrheiten und Vorverurteilungen .
+10-1	477-481	Aber	_	_	_	aber	10-1	05.08.2010	Wir kennen tausend Details.	Doch geht es mittlerweile nicht mehr nur um zwei Menschen.	Die Zeit, 05.08.2010, Nr. 32	_	ADV	JU	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|ADV[167]	
+10-2	482-484	im	_	_	_	in	10-2	_	_	_	_	_	APPRART	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PP[168]|APPRART[169]	
+10-3	485-491	Grunde	_	_	_	Grund	10-3	_	_	_	_	_	NN	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PP[168]|NN[170]	
+10-4	492-498	wissen	_	_	_	wissen	10-4	_	_	_	_	_	VVFIN	HD	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|VVFIN[171]	
+10-5	499-502	wir	_	_	_	wir	10-5	_	_	_	_	_	PPER	SB	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PPER[172]	
+10-6	503-509	nichts	_	_	_	nichts	10-6	_	_	_	_	_	PIS	OA	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PIS[173]	
+10-7	510-514	über	_	_	_	über	10-7	_	_	_	_	_	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|PP[175]|APPR[176]	
+10-8	515-518	den	_	_	_	die	10-8	_	_	_	_	_	ART	NK[32]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|PP[175]|ART[177]	
+10-9	519-523	Fall	_	_	_	Fall	10-9	_	_	_	_	_	NN	NK[32]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|PP[175]|NN[178]	
+10-10	524-534	Kachelmann	_	_	_	Kachelmann	10-10	_	_	_	_	_	NE	NK[32]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|NE[179]	
+10-11	535-536	,	_	_	_	,	10-11	_	_	_	_	_	$,	OA	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|$,[180]	
+10-12	537-543	selbst	_	_	_	selbst	10-12	_	_	_	_	_	ADV	MO	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[182]|ADV[183]	
+10-13	544-548	nach	_	_	_	nach	10-13	_	_	_	_	_	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[182]|APPR[184]	
+10-14	549-555	Wochen	_	_	_	Woche	10-14	_	_	_	_	_	NN	NK[33]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[182]|NN[185]	
+10-15	556-566	intensiver	_	_	_	intensiv	10-15	_	_	_	_	_	ADJA	NK[33]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[182]|PN[186]|NP[187]|ADJA[188]	
+10-16	567-584	Berichterstattung	_	_	_	Berichterstattung	10-16	_	_	_	_	_	NN	NK[33]	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[182]|PN[186]|NP[187]|NN[189]	
+10-17	585-586	,	_	_	_	,	10-17	_	_	_	_	_	$,	OP	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|$,[190]	
+10-18	587-591	auch	_	_	_	auch	10-18	_	_	_	_	_	ADV	MO	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[191]|ADV[192]	
+10-19	592-594	in	_	_	_	in	10-19	_	_	_	_	_	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[191]|APPR[193]	
+10-20	595-602	derZEIT	_	_	_	derZEIT	10-20	_	_	_	_	_	NN	MO	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[191]|NP[194]|NN[195]	
+10-21	603-604	.	_	_	_	.	10-21	_	_	_	_	_	$.	APP	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[191]|NP[194]|$.[196]	
+10-22	605-612	Aussage	_	Vor\_Präp	_	Aussage	10-22	_	_	_	_	N1\_gegen\_N1	NN	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[174]|CPP[181]|PP[191]|NP[194]|NN[197]	
+10-23	613-618	steht	_	_	_	stehen	10-23	_	_	_	_	_	VVFIN	HD	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|VVFIN[198]	
+10-24	619-624	gegen	_	_	*	gegen	10-24	_	_	_	_	N1\_gegen\_N1[16]	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PP[199]|APPR[200]	
+10-25	625-632	Aussage	_	Nach\_Präp	_	Aussage	10-25	_	_	_	_	N1\_gegen\_N1[16]	NN	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|PP[199]|NN[201]	
+10-26	633-634	,	_	_	_	,	10-26	_	_	_	_	_	$,	CJ	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|$,[202]	
+10-27	635-644	Gutachten	_	_	_	Gutachten	10-27	_	_	_	_	_	NN	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[203]|NN[204]	
+10-28	645-650	gegen	_	_	_	gegen	10-28	_	_	_	_	_	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[203]|PP[205]|APPR[206]	
+10-29	651-660	Gutachten	_	_	_	Gutachten	10-29	_	_	_	_	_	NN	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[166]|NP[203]|PP[205]|NN[207]	
+10-30	661-662	,	_	_	_	,	10-30	_	_	_	_	_	$,	CC	S[162]|AP[163]|AVP[164]|CS[165]|$,[208]	
+10-31	663-666	und	_	_	_	und	10-31	_	_	_	_	_	KON	CD	S[162]|AP[163]|AVP[164]|CS[165]|KON[209]	
+10-32	667-669	je	_	_	_	je	10-32	_	_	_	_	_	ADV	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|ADV[213]	
+10-33	670-683	ausführlicher	_	_	_	ausführlich	10-33	_	_	_	_	_	ADJD	NK	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|ADJD[214]	
+10-34	684-688	über	_	_	_	über	10-34	_	_	_	_	_	APPR	AC	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|APPR[215]	
+10-35	689-692	die	_	_	_	die	10-35	_	_	_	_	_	ART	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|ART[216]	
+10-36	693-703	angebliche	_	_	_	angeblich	10-36	_	_	_	_	_	ADJA	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|ADJA[217]	
+10-37	704-718	Vergewaltigung	_	_	_	Vergewaltigung	10-37	_	_	_	_	_	NN	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|NN[218]	
+10-38	719-724	einer	_	_	_	eine	10-38	_	_	_	_	_	ART	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|NP[219]|ART[220]	
+10-39	725-733	Freundin	_	_	_	Freundin	10-39	_	_	_	_	_	NN	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|NP[219]|NN[221]	
+10-40	734-737	des	_	_	_	die	10-40	_	_	_	_	_	ART	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|NP[219]|NP[222]|ART[223]	
+10-41	738-748	Moderators	_	_	_	Moderator	10-41	_	_	_	_	_	NN	NK[34]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|PP[212]|NP[219]|NP[222]|NN[224]	
+10-42	749-758	berichtet	_	_	_	berichten	10-42	_	_	_	_	_	VVPP	HD[35]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VP[211]|VVPP[225]	
+10-43	759-763	wird	_	_	_	werden	10-43	_	_	_	_	_	VAFIN	HD[35]	S[162]|AP[163]|AVP[164]|CS[165]|S[210]|VAFIN[226]	
+10-44	764-765	,	_	_	_	,	10-44	_	_	_	_	_	$,	MO	S[162]|AP[163]|AVP[164]|$,[227]	
+10-45	766-771	desto	_	_	_	desto	10-45	_	_	_	_	_	KON	HD[36]	S[162]|AP[163]|AVP[164]|KON[228]	
+10-46	772-779	dichter	_	_	_	dicht	10-46	_	_	_	_	_	ADJD	HD[36]	S[162]|AP[163]|ADJD[229]	
+10-47	780-784	wird	_	_	_	werden	10-47	_	_	_	_	_	VAFIN	HD[36]	S[162]|VAFIN[230]	
+10-48	785-788	der	_	_	_	die	10-48	_	_	_	_	_	ART	NK[37]	S[162]|NP[231]|ART[232]	
+10-49	789-794	Nebel	_	_	_	Nebel	10-49	_	_	_	_	_	NN	NK[37]	S[162]|NP[231]|NN[233]	
+10-50	795-798	der	_	_	_	die	10-50	_	_	_	_	_	ART	NK[37]	S[162]|NP[231]|NP[234]|ART[235]	
+10-51	799-813	Halbwahrheiten	_	_	_	Halbwahrheit	10-51	_	_	_	_	_	NN	CJ	S[162]|NP[231]|NP[234]|CNP[236]|NN[237]	
+10-52	814-817	und	_	_	_	und	10-52	_	_	_	_	_	KON	CD	S[162]|NP[231]|NP[234]|CNP[236]|KON[238]	
+10-53	818-835	Vorverurteilungen	_	_	_	Vorverurteilungen	10-53	_	_	_	_	_	NN	CJ	S[162]|NP[231]|NP[234]|CNP[236]|NN[239]	
+10-54	836-837	.	_	_	_	.	10-54	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage .
+11-1	838-845	Aussage	_	_	_	Aussage	11-1	10.06.2009	Voraussetzung gewesen seien aber ""die eigenhändig unterschriebenen Aufnahmeanträge derjenigen Jugendlichen, die sie für den Parteieintritt als' würdig 'erachteten"" – das waren 1944 im Durchschnitt weniger als 20 Prozent aller Hitlerjungen eines Jahrgangs.	Karteikarte gegen Erinnerung.	Zeit Magazin, 10.06.2009, Nr. 25	_	NN	NK	S[240]|NP[241]|NN[242]	
+11-2	846-851	steht	_	_	_	stehen	11-2	_	_	_	_	_	VVFIN	HD	S[240]|VVFIN[243]	
+11-3	852-857	gegen	_	_	_	gegen	11-3	_	_	_	_	_	APPR	AC	S[240]|PP[244]|APPR[245]	
+11-4	858-865	Aussage	_	_	_	Aussage	11-4	_	_	_	_	_	NN	NK	S[240]|PP[244]|NN[246]	
+11-5	866-867	.	_	_	_	.	11-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage .
+12-1	868-875	Aussage	_	_	_	Aussage	12-1	10.11.2006	Noch sind die Vorwürfe freilich nicht bewiesen.	Doch die Umstände sprechen dafür, dass etwas daran sein könnte.	Die Zeit, 10.11.2006, Nr. 46	_	NN	NK	S[247]|NP[248]|NN[249]	
+12-2	876-881	steht	_	_	_	stehen	12-2	_	_	_	_	_	VVFIN	HD	S[247]|VVFIN[250]	
+12-3	882-887	gegen	_	_	_	gegen	12-3	_	_	_	_	_	APPR	AC	S[247]|PP[251]|APPR[252]	
+12-4	888-895	Aussage	_	_	_	Aussage	12-4	_	_	_	_	_	NN	NK	S[247]|PP[251]|NN[253]	
+12-5	896-897	.	_	_	_	.	12-5	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht gegen Aussage .
+13-1	898-905	Aussage	_	_	_	Aussage	13-1	10.12.2004	Es sei eine Mär, der erste Trainer hätte kein Geld für erfahrene Akteure bekommen\; vielmehr habe er sich dagegen gesträubt.	Der Regionalliga-Vorletzte will jetzt nachträglich handeln.	Berliner Zeitung, 10.12.2004	_	NN	NK	S[254]|NP[255]|NN[256]	
+13-2	906-911	steht	_	_	_	stehen	13-2	_	_	_	_	_	VVFIN	HD	S[254]|VVFIN[257]	
+13-3	912-917	gegen	_	_	_	gegen	13-3	_	_	_	_	_	APPR	AC	S[254]|PP[258]|APPR[259]	
+13-4	918-925	Aussage	_	_	_	Aussage	13-4	_	_	_	_	_	NN	NK	S[254]|PP[258]|NN[260]	
+13-5	926-927	.	_	_	_	.	13-5	_	_	_	_	_	$.		$.	
+
+#Text=" " Aussage stand gegen Aussage " " , erklärt Marseille mit einem Lächeln .
+14-1	928-929	"	_	_	_	"[5]	14-1	29.11.2001	Später wurde das Ermittlungsverfahren eingestellt.	Sein Engagement für die Mieter &Bürgerliste endete übrigens mit mäßigem Erfolg.	Die Zeit, 29.11.2001, Nr. 49	_	$([19]		$(	
+14-2	930-931	"	_	_	_	"[5]	14-2	_	_	_	_	_	$([19]	NK[38]	S[261]|NP[262]|$([263]	
+14-3	932-939	Aussage	_	_	_	Aussage	14-3	_	_	_	_	_	NN	NK[38]	S[261]|NP[262]|NN[264]	
+14-4	940-945	stand	_	_	_	stehen	14-4	_	_	_	_	_	VVFIN	HD	S[261]|VVFIN[265]	
+14-5	946-951	gegen	_	_	_	gegen	14-5	_	_	_	_	_	APPR	AC	S[261]|PP[266]|APPR[267]	
+14-6	952-959	Aussage	_	_	_	Aussage	14-6	_	_	_	_	_	NN	NK[39]	S[261]|PP[266]|NN[268]	
+14-7	960-961	"	_	_	_	"[6]	14-7	_	_	_	_	_	$([20]	NK[39]	S[261]|PP[266]|NP[269]|$([270]	
+14-8	962-963	"	_	_	_	"[6]	14-8	_	_	_	_	_	$([20]	NK[39]	S[261]|PP[266]|NP[269]|$([270]	
+14-9	964-965	,	_	_	_	,	14-9	_	_	_	_	_	$,		S[261]|$,[271]	
+14-10	966-973	erklärt	_	_	_	erklären	14-10	_	_	_	_	_	VVFIN	HD	S[261]|VVFIN[272]	
+14-11	974-983	Marseille	_	_	_	Marseille	14-11	_	_	_	_	_	NE	SB	S[261]|NE[273]	
+14-12	984-987	mit	_	_	_	mit	14-12	_	_	_	_	_	APPR	AC	S[261]|PP[274]|APPR[275]	
+14-13	988-993	einem	_	_	_	eine	14-13	_	_	_	_	_	ART	NK[40]	S[261]|PP[274]|ART[276]	
+14-14	994-1001	Lächeln	_	_	_	Lächeln	14-14	_	_	_	_	_	NN	NK[40]	S[261]|PP[274]|NN[277]	
+14-15	1002-1003	.	_	_	_	.	14-15	_	_	_	_	_	$.		$.	
+
+#Text=" " Aussage stand gegen Aussage " " , erklärt Marseille mit einem Lächeln .
+15-1	1004-1005	"	_	_	_	"[7]	15-1	29.11.2001	Später wurde das Ermittlungsverfahren eingestellt.	Sein Engagement für die Mieter &Bürgerliste endete übrigens mit mäßigem Erfolg.	Die Zeit, 29.11.2001 (online)	_	$([21]		$(	
+15-2	1006-1007	"	_	_	_	"[7]	15-2	_	_	_	_	_	$([21]	NK[41]	S[278]|NP[279]|$([280]	
+15-3	1008-1015	Aussage	_	_	_	Aussage	15-3	_	_	_	_	_	NN	NK[41]	S[278]|NP[279]|NN[281]	
+15-4	1016-1021	stand	_	_	_	stehen	15-4	_	_	_	_	_	VVFIN	HD	S[278]|VVFIN[282]	
+15-5	1022-1027	gegen	_	_	_	gegen	15-5	_	_	_	_	_	APPR	AC	S[278]|PP[283]|APPR[284]	
+15-6	1028-1035	Aussage	_	_	_	Aussage	15-6	_	_	_	_	_	NN	NK[42]	S[278]|PP[283]|NN[285]	
+15-7	1036-1037	"	_	_	_	"[8]	15-7	_	_	_	_	_	$([22]	NK[42]	S[278]|PP[283]|NP[286]|$([287]	
+15-8	1038-1039	"	_	_	_	"[8]	15-8	_	_	_	_	_	$([22]	NK[42]	S[278]|PP[283]|NP[286]|$([287]	
+15-9	1040-1041	,	_	_	_	,	15-9	_	_	_	_	_	$,		S[278]|$,[288]	
+15-10	1042-1049	erklärt	_	_	_	erklären	15-10	_	_	_	_	_	VVFIN	HD	S[278]|VVFIN[289]	
+15-11	1050-1059	Marseille	_	_	_	Marseille	15-11	_	_	_	_	_	NE	SB	S[278]|NE[290]	
+15-12	1060-1063	mit	_	_	_	mit	15-12	_	_	_	_	_	APPR	AC	S[278]|PP[291]|APPR[292]	
+15-13	1064-1069	einem	_	_	_	eine	15-13	_	_	_	_	_	ART	NK[43]	S[278]|PP[291]|ART[293]	
+15-14	1070-1077	Lächeln	_	_	_	Lächeln	15-14	_	_	_	_	_	NN	NK[43]	S[278]|PP[291]|NN[294]	
+15-15	1078-1079	.	_	_	_	.	15-15	_	_	_	_	_	$.		$.	

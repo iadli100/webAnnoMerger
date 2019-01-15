@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=webanno.custom.CategoryKE|KEValue
+#T_SP=webanno.custom.CategoryKEE|KEEValue
+#T_SP=webanno.custom.CategoryLEMMA|LEMMAValue
+#T_SP=webanno.custom.CategoryMetaCorpusID|MetaCorpusIDValue
+#T_SP=webanno.custom.CategoryMetaDate|MetaDateValue
+#T_SP=webanno.custom.CategoryMetaLContext|MetaLContextValue
+#T_SP=webanno.custom.CategoryMetaRContext|MetaRContextValue
+#T_SP=webanno.custom.CategoryMetaSource|MetaSourceValue
+#T_SP=webanno.custom.CategoryName|NameValue
+#T_SP=webanno.custom.CategoryPOS|POSValue
+#T_SP=webanno.custom.GF|GFDesc
+#T_SP=webanno.custom.PT|PTDesc
+
+
+#Text=Aussage steht nun gegen Aussage .
+1-1	0-7	Aussage	Vor\_Präp	_	Aussage	1-1	14.01.2010	Der Anwalt wiederum wirft	Doch mehrere wichtige Fragen bleiben, die Popal nicht entkräften kann.	Die Zeit, 14.01.2010, Nr. 3	N1\_gegen\_N1	NN	NK	S[5]|NP[6]|NN[7]	
+1-2	8-13	steht	_	_	stehen	1-2	_	_	_	_	_	VVFIN	HD	S[5]|VVFIN[8]	
+1-3	14-17	nun	_	_	nun	1-3	_	_	_	_	_	ADV	MO	S[5]|ADV[9]	
+1-4	18-23	gegen	_	*	gegen	1-4	_	_	_	_	N1\_gegen\_N1[1]	APPR	AC	S[5]|PP[10]|APPR[11]	
+1-5	24-31	Aussage	Nach\_Präp	_	Aussage	1-5	_	_	_	_	N1\_gegen\_N1[1]	NN	NK	S[5]|PP[10]|NN[12]	
+1-6	32-33	.	_	_	.	1-6	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht hier gegen Aussage .
+2-1	34-41	Aussage	Vor\_Präp	_	Aussage	2-1	20.02.2005	Zu den großen Vorzügen von Regina Leßners Feature „Ulrike Meinhof – Mythos und Wirklichkeit (Deutscher Audio Verlag 2003) gehört es, den Hörer in ein Labyrinth zu schicken.	Jeder Satz weist in eine andere Richtung.	Der Tagesspiegel, 20.02.2005	N1\_gegen\_N1	NN	NK	S[13]|NP[14]|NN[15]	
+2-2	42-47	steht	_	_	stehen	2-2	_	_	_	_	_	VVFIN	HD	S[13]|VVFIN[16]	
+2-3	48-52	hier	_	_	hier	2-3	_	_	_	_	_	ADV	MO	S[13]|ADV[17]	
+2-4	53-58	gegen	_	*	gegen	2-4	_	_	_	_	N1\_gegen\_N1[2]	APPR	AC	S[13]|PP[18]|APPR[19]	
+2-5	59-66	Aussage	Nach\_Präp	_	Aussage	2-5	_	_	_	_	N1\_gegen\_N1[2]	NN	NK	S[13]|PP[18]|NN[20]	
+2-6	67-68	.	_	_	.	2-6	_	_	_	_	_	$.		$.	
+
+#Text=Aussage steht damit gegen Aussage , und vorerst kann nur die Plausibilität beider Darstellungen bewertet werden .
+3-1	69-76	Aussage	Vor\_Präp	_	Aussage	3-1	24.01.2000	Dagegen verweisen seriöse Medien auf die Glaubwürdigkeit ihrer Informationsquellen.	Es gibt inzwischen eine Menge von Hinweisen auf gewaltige Geldströme, die im direkten, mindestens aber im zeitlichen Zusammenhang mit der Leuna-Privatisierung durch Deutschland, Frankreich, die Schweiz und Liechtenstein flossen.	Berliner Zeitung, 24.01.2000	N1\_gegen\_N1	NN	NK	CS[21]|S[22]|NP[23]|NN[24]	
+3-2	77-82	steht	_	_	stehen	3-2	_	_	_	_	_	VVFIN	HD	CS[21]|S[22]|VVFIN[25]	
+3-3	83-88	damit	_	_	damit	3-3	_	_	_	_	_	PAV	MO	CS[21]|S[22]|PAV[26]	
+3-4	89-94	gegen	_	*	gegen	3-4	_	_	_	_	N1\_gegen\_N1[3]	APPR	AC	CS[21]|S[22]|PP[27]|APPR[28]	
+3-5	95-102	Aussage	Nach\_Präp	_	Aussage	3-5	_	_	_	_	N1\_gegen\_N1[3]	NN	NK	CS[21]|S[22]|PP[27]|NN[29]	
+3-6	103-104	,	_	_	,	3-6	_	_	_	_	_	$,		CS[21]|$,[30]	
+3-7	105-108	und	_	_	und	3-7	_	_	_	_	_	KON	CD	CS[21]|KON[31]	
+3-8	109-116	vorerst	_	_	vorerst	3-8	_	_	_	_	_	ADV	MO	CS[21]|S[32]|ADV[33]	
+3-9	117-121	kann	_	_	können	3-9	_	_	_	_	_	VMFIN	HD	CS[21]|S[32]|VMFIN[34]	
+3-10	122-125	nur	_	_	nur	3-10	_	_	_	_	_	ADV	MO	CS[21]|S[32]|NP[35]|ADV[36]	
+3-11	126-129	die	_	_	die	3-11	_	_	_	_	_	ART	NK[4]	CS[21]|S[32]|NP[35]|ART[37]	
+3-12	130-143	Plausibilität	_	_	Plausibilität	3-12	_	_	_	_	_	NN	NK[4]	CS[21]|S[32]|NP[35]|NN[38]	
+3-13	144-150	beider	_	_	beide	3-13	_	_	_	_	_	PIAT	NK[4]	CS[21]|S[32]|NP[35]|NP[39]|PIAT[40]	
+3-14	151-164	Darstellungen	_	_	Darstellung	3-14	_	_	_	_	_	NN	NK[4]	CS[21]|S[32]|NP[35]|NP[39]|NN[41]	
+3-15	165-173	bewertet	_	_	bewerten	3-15	_	_	_	_	_	VVPP	OC	CS[21]|S[32]|VP[42]|VVPP[43]	
+3-16	174-180	werden	_	_	werden	3-16	_	_	_	_	_	VAINF	HD	CS[21]|S[32]|VP[42]|VAINF[44]	
+3-17	181-182	.	_	_	.	3-17	_	_	_	_	_	$.		$.	
